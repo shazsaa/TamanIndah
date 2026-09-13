@@ -1,0 +1,829 @@
+/* Customer-facing UI only — scoped so admin (body.bg-light) is unaffected.
+   Typography and controls apply only inside main content, not navbar / hero / footer. */
+
+body.storefront-page > .container.py-4,
+body.storefront-page > .container.py-5,
+body.storefront-page main,
+body.storefront-page .storefront-content,
+body.storefront-page .content-area,
+body.home-page section:not(.home-hero) .container,
+body.home-page > .container.mt-3,
+body.guest-storefront .guest-auth-card {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #2d5033;
+}
+
+body.storefront-page > .container.py-4 h1,
+body.storefront-page > .container.py-5 h1,
+body.storefront-page main h1,
+body.storefront-page .storefront-content h1,
+body.storefront-page .content-area h1,
+body.home-page section:not(.home-hero) .container h1,
+body.home-page > .container.mt-3 h1,
+body.guest-storefront .guest-auth-card h1 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #2d5033;
+    margin-bottom: 1.25rem;
+}
+
+body.storefront-page .content-area h2,
+body.storefront-page main h2,
+body.storefront-page > .container.py-4 h2,
+body.storefront-page > .container.py-5 h2,
+body.storefront-page .storefront-content h2,
+body.home-page section:not(.home-hero) .container h2,
+body.guest-storefront .guest-auth-card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d5033;
+    margin-bottom: 1rem;
+}
+
+body.storefront-page > .container.py-4 h3,
+body.storefront-page > .container.py-5 h3,
+body.storefront-page main h3,
+body.storefront-page .storefront-content h3,
+body.storefront-page .content-area h3,
+body.home-page section:not(.home-hero) .container h3,
+body.home-page > .container.mt-3 h3,
+body.guest-storefront .guest-auth-card h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #2d5033;
+}
+
+body.storefront-page > .container.py-4 p,
+body.storefront-page > .container.py-5 p,
+body.storefront-page main p,
+body.storefront-page .storefront-content p,
+body.storefront-page .content-area p,
+body.home-page section:not(.home-hero) .container p,
+body.home-page > .container.mt-3 p,
+body.guest-storefront .guest-auth-card p,
+body.storefront-page > .container.py-4 td,
+body.storefront-page > .container.py-5 td,
+body.storefront-page main td,
+body.storefront-page .storefront-content td,
+body.storefront-page .content-area td,
+body.home-page section:not(.home-hero) .container td,
+body.home-page > .container.mt-3 td,
+body.guest-storefront .guest-auth-card td,
+body.storefront-page > .container.py-4 li,
+body.storefront-page > .container.py-5 li,
+body.storefront-page main li,
+body.storefront-page .storefront-content li,
+body.storefront-page .content-area li,
+body.home-page section:not(.home-hero) .container li,
+body.home-page > .container.mt-3 li,
+body.guest-storefront .guest-auth-card li {
+    font-size: 13px;
+    color: #444;
+}
+
+body.storefront-page > .container.py-4 label,
+body.storefront-page > .container.py-5 label,
+body.storefront-page main label,
+body.storefront-page .storefront-content label,
+body.storefront-page .content-area label,
+body.home-page section:not(.home-hero) .container label,
+body.home-page > .container.mt-3 label,
+body.guest-storefront .guest-auth-card label,
+body.storefront-page > .container.py-4 small,
+body.storefront-page > .container.py-5 small,
+body.storefront-page main small,
+body.storefront-page .storefront-content small,
+body.storefront-page .content-area small,
+body.home-page section:not(.home-hero) .container small,
+body.home-page > .container.mt-3 small,
+body.guest-storefront .guest-auth-card small,
+body.storefront-page > .container.py-4 .text-sm,
+body.storefront-page > .container.py-5 .text-sm,
+body.storefront-page main .text-sm,
+body.storefront-page .storefront-content .text-sm,
+body.storefront-page .content-area .text-sm,
+body.home-page section:not(.home-hero) .container .text-sm,
+body.home-page > .container.mt-3 .text-sm,
+body.guest-storefront .guest-auth-card .text-sm {
+    font-size: 12px;
+}
+
+body.storefront-page > .container.py-4 .breadcrumb,
+body.storefront-page > .container.py-5 .breadcrumb,
+body.storefront-page main .breadcrumb,
+body.storefront-page .storefront-content .breadcrumb,
+body.storefront-page .content-area .breadcrumb,
+body.home-page section:not(.home-hero) .container .breadcrumb,
+body.home-page > .container.mt-3 .breadcrumb,
+body.guest-storefront .guest-auth-card .breadcrumb,
+body.storefront-page > .container.py-4 nav.breadcrumb a,
+body.storefront-page > .container.py-5 nav.breadcrumb a,
+body.storefront-page main nav.breadcrumb a,
+body.storefront-page .storefront-content nav.breadcrumb a,
+body.storefront-page .content-area nav.breadcrumb a,
+body.home-page section:not(.home-hero) .container nav.breadcrumb a,
+body.home-page > .container.mt-3 nav.breadcrumb a,
+body.guest-storefront .guest-auth-card nav.breadcrumb a {
+    font-size: 12px;
+    color: #aaa;
+}
+
+body.storefront-page > .container.py-4 .badge,
+body.storefront-page > .container.py-5 .badge,
+body.storefront-page main .badge,
+body.storefront-page .storefront-content .badge,
+body.storefront-page .content-area .badge,
+body.home-page section:not(.home-hero) .container .badge,
+body.home-page > .container.mt-3 .badge,
+body.guest-storefront .guest-auth-card .badge {
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+body.storefront-page > .container.py-4 .btn-primary,
+body.storefront-page > .container.py-5 .btn-primary,
+body.storefront-page main .btn-primary,
+body.storefront-page .storefront-content .btn-primary,
+body.storefront-page .content-area .btn-primary,
+body.storefront-page > .container.py-4 a.btn-primary,
+body.storefront-page > .container.py-5 a.btn-primary,
+body.storefront-page main a.btn-primary,
+body.storefront-page .storefront-content a.btn-primary,
+body.storefront-page .content-area a.btn-primary,
+body.storefront-page > .container.py-4 .sf-btn-primary,
+body.storefront-page > .container.py-5 .sf-btn-primary,
+body.storefront-page main .sf-btn-primary,
+body.storefront-page .storefront-content .sf-btn-primary,
+body.storefront-page .content-area .sf-btn-primary,
+body.storefront-page > .container.py-4 a.sf-btn-primary,
+body.storefront-page > .container.py-5 a.sf-btn-primary,
+body.storefront-page main a.sf-btn-primary,
+body.storefront-page .storefront-content a.sf-btn-primary,
+body.storefront-page .content-area a.sf-btn-primary,
+body.storefront-page > .container.py-4 button.sf-btn-primary,
+body.storefront-page > .container.py-5 button.sf-btn-primary,
+body.storefront-page main button.sf-btn-primary,
+body.storefront-page .storefront-content button.sf-btn-primary,
+body.storefront-page .content-area button.sf-btn-primary,
+body.home-page section:not(.home-hero) .container .btn-primary,
+body.home-page section:not(.home-hero) .container a.btn-primary,
+body.home-page > .container.mt-3 .btn-primary,
+body.home-page > .container.mt-3 a.btn-primary,
+body.guest-storefront .guest-auth-card .btn-primary,
+body.guest-storefront .guest-auth-card a.btn-primary {
+    height: 38px;
+    padding: 0 20px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 8px;
+    background: #4A7C59;
+    color: white;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+body.storefront-page > .container.py-4 .btn-secondary,
+body.storefront-page > .container.py-5 .btn-secondary,
+body.storefront-page main .btn-secondary,
+body.storefront-page .storefront-content .btn-secondary,
+body.storefront-page .content-area .btn-secondary,
+body.storefront-page > .container.py-4 a.btn-secondary,
+body.storefront-page > .container.py-5 a.btn-secondary,
+body.storefront-page main a.btn-secondary,
+body.storefront-page .storefront-content a.btn-secondary,
+body.storefront-page .content-area a.btn-secondary,
+body.storefront-page > .container.py-4 .sf-btn-outline,
+body.storefront-page > .container.py-5 .sf-btn-outline,
+body.storefront-page main .sf-btn-outline,
+body.storefront-page .storefront-content .sf-btn-outline,
+body.storefront-page .content-area .sf-btn-outline,
+body.storefront-page > .container.py-4 a.sf-btn-outline,
+body.storefront-page > .container.py-5 a.sf-btn-outline,
+body.storefront-page main a.sf-btn-outline,
+body.storefront-page .storefront-content a.sf-btn-outline,
+body.storefront-page .content-area a.sf-btn-outline,
+body.home-page section:not(.home-hero) .container .btn-secondary,
+body.home-page section:not(.home-hero) .container a.btn-secondary,
+body.home-page > .container.mt-3 .btn-secondary,
+body.home-page > .container.mt-3 a.btn-secondary,
+body.guest-storefront .guest-auth-card .btn-secondary,
+body.guest-storefront .guest-auth-card a.btn-secondary {
+    height: 38px;
+    padding: 0 20px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 8px;
+    background: white;
+    color: #4A7C59;
+    border: 0.5px solid #d8e8d8;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+body.storefront-page > .container.py-4 input[type="text"],
+body.storefront-page > .container.py-5 input[type="text"],
+body.storefront-page main input[type="text"],
+body.storefront-page .storefront-content input[type="text"],
+body.storefront-page .content-area input[type="text"],
+body.home-page section:not(.home-hero) .container input[type="text"],
+body.home-page > .container.mt-3 input[type="text"],
+body.guest-storefront .guest-auth-card input[type="text"],
+body.storefront-page > .container.py-4 input[type="number"],
+body.storefront-page > .container.py-5 input[type="number"],
+body.storefront-page main input[type="number"],
+body.storefront-page .storefront-content input[type="number"],
+body.storefront-page .content-area input[type="number"],
+body.home-page section:not(.home-hero) .container input[type="number"],
+body.home-page > .container.mt-3 input[type="number"],
+body.guest-storefront .guest-auth-card input[type="number"],
+body.storefront-page > .container.py-4 input[type="email"],
+body.storefront-page > .container.py-5 input[type="email"],
+body.storefront-page main input[type="email"],
+body.storefront-page .storefront-content input[type="email"],
+body.storefront-page .content-area input[type="email"],
+body.home-page section:not(.home-hero) .container input[type="email"],
+body.home-page > .container.mt-3 input[type="email"],
+body.guest-storefront .guest-auth-card input[type="email"],
+body.storefront-page > .container.py-4 input[type="password"],
+body.storefront-page > .container.py-5 input[type="password"],
+body.storefront-page main input[type="password"],
+body.storefront-page .storefront-content input[type="password"],
+body.storefront-page .content-area input[type="password"],
+body.home-page section:not(.home-hero) .container input[type="password"],
+body.home-page > .container.mt-3 input[type="password"],
+body.guest-storefront .guest-auth-card input[type="password"],
+body.storefront-page > .container.py-4 select,
+body.storefront-page > .container.py-5 select,
+body.storefront-page main select,
+body.storefront-page .storefront-content select,
+body.storefront-page .content-area select,
+body.home-page section:not(.home-hero) .container select,
+body.home-page > .container.mt-3 select,
+body.guest-storefront .guest-auth-card select {
+    height: 38px;
+    font-size: 13px;
+    padding: 0 12px;
+    border: 0.5px solid #d8e8d8;
+    border-radius: 8px;
+    background: #fafaf9;
+    color: #2d5033;
+    box-sizing: border-box;
+}
+
+body.storefront-page > .container.py-4 textarea,
+body.storefront-page > .container.py-5 textarea,
+body.storefront-page main textarea,
+body.storefront-page .storefront-content textarea,
+body.storefront-page .content-area textarea,
+body.home-page section:not(.home-hero) .container textarea,
+body.home-page > .container.mt-3 textarea,
+body.guest-storefront .guest-auth-card textarea {
+    height: auto;
+    min-height: 38px;
+    padding: 10px 12px;
+}
+
+body.storefront-page > .container.py-4 .card,
+body.storefront-page > .container.py-5 .card,
+body.storefront-page main .card,
+body.storefront-page .storefront-content .card,
+body.storefront-page .content-area .card,
+body.home-page section:not(.home-hero) .container .card,
+body.home-page > .container.mt-3 .card,
+body.guest-storefront .guest-auth-card.card {
+    background: white;
+    border: 0.5px solid #d8e8d8;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+body.storefront-page > .container.py-4 table,
+body.storefront-page > .container.py-5 table,
+body.storefront-page main table,
+body.storefront-page .storefront-content table,
+body.storefront-page .content-area table,
+body.home-page section:not(.home-hero) .container table,
+body.home-page > .container.mt-3 table,
+body.guest-storefront .guest-auth-card table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+body.storefront-page > .container.py-4 th,
+body.storefront-page > .container.py-5 th,
+body.storefront-page main th,
+body.storefront-page .storefront-content th,
+body.storefront-page .content-area th,
+body.home-page section:not(.home-hero) .container th,
+body.home-page > .container.mt-3 th,
+body.guest-storefront .guest-auth-card th {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px 16px;
+    background: #f4f8f4;
+    color: #2d5033;
+    border-bottom: 0.5px solid #d8e8d8;
+}
+
+body.storefront-page > .container.py-4 td,
+body.storefront-page > .container.py-5 td,
+body.storefront-page main td,
+body.storefront-page .storefront-content td,
+body.storefront-page .content-area td,
+body.home-page section:not(.home-hero) .container td,
+body.home-page > .container.mt-3 td,
+body.guest-storefront .guest-auth-card td {
+    padding: 10px 16px;
+    font-size: 13px;
+    color: #444;
+    border-bottom: 0.5px solid #f4f4f4;
+    vertical-align: middle;
+}
+
+body.storefront-page > .container.py-4 tbody tr:last-child td,
+body.storefront-page > .container.py-5 tbody tr:last-child td,
+body.storefront-page main tbody tr:last-child td,
+body.storefront-page .storefront-content tbody tr:last-child td,
+body.storefront-page .content-area tbody tr:last-child td,
+body.home-page section:not(.home-hero) .container tbody tr:last-child td,
+body.home-page > .container.mt-3 tbody tr:last-child td,
+body.guest-storefront .guest-auth-card tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.hero-section p,
+.hero-section h1,
+.hero-section h2,
+.hero p,
+.hero h1,
+.hero h2,
+.home-hero p,
+.home-hero h1,
+.home-hero h2 {
+    color: white !important;
+}
+
+footer p,
+footer span,
+footer a {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+body.storefront-page > .container.py-4 .btn-primary svg,
+body.storefront-page > .container.py-5 .btn-primary svg,
+body.storefront-page main .btn-primary svg,
+body.storefront-page .storefront-content .btn-primary svg,
+body.storefront-page .content-area .btn-primary svg,
+body.storefront-page > .container.py-4 .btn-secondary svg,
+body.storefront-page > .container.py-5 .btn-secondary svg,
+body.storefront-page main .btn-secondary svg,
+body.storefront-page .storefront-content .btn-secondary svg,
+body.storefront-page .content-area .btn-secondary svg,
+body.home-page section:not(.home-hero) .container .btn-primary svg,
+body.home-page section:not(.home-hero) .container .btn-secondary svg,
+body.home-page > .container.mt-3 .btn-primary svg,
+body.home-page > .container.mt-3 .btn-secondary svg,
+body.guest-storefront .guest-auth-card .btn-primary svg,
+body.guest-storefront .guest-auth-card .btn-secondary svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+}
+
+/* ============================================
+   ANIMATIONS & TRANSITIONS — Modern Upgrade
+   ============================================ */
+
+/* Scroll reveal base */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.08s; }
+.reveal-delay-2 { transition-delay: 0.16s; }
+.reveal-delay-3 { transition-delay: 0.24s; }
+.reveal-delay-4 { transition-delay: 0.32s; }
+
+/* Product card hover — lift + shadow */
+body.home-page .card,
+body.storefront-page .card {
+    transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+    will-change: transform;
+}
+body.home-page .card:hover,
+body.storefront-page .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(45, 80, 51, 0.13);
+    border-color: #A7C4A0 !important;
+}
+
+/* Button hover transitions */
+body.storefront-page .btn-primary,
+body.home-page .btn-primary,
+body.storefront-page main .btn-primary,
+body.storefront-page .content-area .btn-primary {
+    transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+body.storefront-page .btn-primary:hover,
+body.home-page .btn-primary:hover,
+body.storefront-page main .btn-primary:hover {
+    background: #3a6447 !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(74, 124, 89, 0.35);
+}
+body.storefront-page .btn-primary:active,
+body.home-page .btn-primary:active {
+    transform: translateY(0px) scale(0.97);
+}
+
+body.storefront-page .btn-secondary,
+body.home-page .btn-secondary,
+body.storefront-page main .btn-secondary {
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+body.storefront-page .btn-secondary:hover,
+body.home-page .btn-secondary:hover {
+    background: #f0f7f0 !important;
+    border-color: #4A7C59 !important;
+    transform: translateY(-1px);
+}
+
+/* Navbar link underline animation */
+.storefront-navbar .nav-link {
+    position: relative;
+    transition: color 0.2s ease;
+}
+.storefront-navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #4A7C59;
+    border-radius: 2px;
+    transition: width 0.25s ease;
+}
+.storefront-navbar .nav-link:hover::after,
+.storefront-navbar .nav-link.active::after {
+    width: 100%;
+}
+
+/* Badge pulse for Best Seller */
+.badge-bestseller {
+    animation: pulseBadge 2.5s ease-in-out infinite;
+}
+@keyframes pulseBadge {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(245, 166, 35, 0.4); }
+    50% { box-shadow: 0 0 0 6px rgba(245, 166, 35, 0); }
+}
+
+/* Floating leaf animation for hero */
+@keyframes floatLeaf {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-16px) rotate(3deg); }
+}
+.hero-float {
+    animation: floatLeaf 4s ease-in-out infinite;
+}
+.hero-float-delayed {
+    animation: floatLeaf 4s ease-in-out infinite 1.5s;
+}
+
+/* Skeleton loading shimmer */
+@keyframes shimmer {
+    0% { background-position: -600px 0; }
+    100% { background-position: 600px 0; }
+}
+.skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 600px 100%;
+    animation: shimmer 1.4s infinite;
+    border-radius: 8px;
+}
+
+/* Smooth page transition */
+body {
+    animation: pageFadeIn 0.35s ease;
+}
+@keyframes pageFadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Toast notification */
+#toast-container {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    pointer-events: none;
+}
+.toast-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 18px;
+    background: #4A7C59;
+    color: white;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    pointer-events: all;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.toast-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.toast-item.toast-accent {
+    background: #F5A623;
+    color: #1a1a1a;
+}
+
+/* ============================================
+   HERO SECTION — Premium Upgrade
+   ============================================ */
+
+.home-hero {
+    min-height: 92vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #1e3d2f 0%, #2d5a3d 40%, #3a7a52 70%, #2d5a3d 100%);
+    background-size: 300% 300%;
+    animation: heroGradient 8s ease infinite;
+    position: relative;
+    padding: 80px 0;
+}
+
+@keyframes heroGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Floating blobs */
+.hero-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    pointer-events: none;
+}
+.hero-blob-1 {
+    width: 400px;
+    height: 400px;
+    background: rgba(167, 196, 160, 0.15);
+    top: -100px;
+    right: -100px;
+    animation: blobFloat 10s ease-in-out infinite;
+}
+.hero-blob-2 {
+    width: 300px;
+    height: 300px;
+    background: rgba(245, 166, 35, 0.08);
+    bottom: -80px;
+    left: -80px;
+    animation: blobFloat 12s ease-in-out infinite reverse;
+}
+@keyframes blobFloat {
+    0%, 100% { transform: translateY(0px) scale(1); }
+    50% { transform: translateY(-30px) scale(1.05); }
+}
+
+/* Floating leaves */
+.hero-leaf {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.6;
+}
+.hero-leaf-1 {
+    top: 15%;
+    right: 10%;
+    animation: floatLeaf 5s ease-in-out infinite;
+}
+.hero-leaf-2 {
+    bottom: 20%;
+    right: 20%;
+    animation: floatLeaf 7s ease-in-out infinite 1s;
+}
+.hero-leaf-3 {
+    top: 30%;
+    left: 8%;
+    animation: floatLeaf 6s ease-in-out infinite 2s;
+}
+@keyframes floatLeaf {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-12px) rotate(3deg); }
+}
+
+/* Hero content */
+.hero-content {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.25);
+    color: rgba(255,255,255,0.9);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 99px;
+    margin-bottom: 28px;
+    letter-spacing: 0.04em;
+}
+
+.hero-title {
+    font-size: clamp(36px, 6vw, 64px);
+    font-weight: 700;
+    color: white;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+}
+
+.hero-title-accent {
+    color: #F5A623;
+    position: relative;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.6;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    padding: 14px 32px;
+    background: #F5A623;
+    color: #1a2e1a;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 99px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    box-shadow: 0 4px 20px rgba(245, 166, 35, 0.4);
+}
+.hero-btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 28px rgba(245, 166, 35, 0.5);
+    background: #e8961a;
+    color: #1a2e1a;
+}
+
+.hero-btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    padding: 14px 32px;
+    background: rgba(255,255,255,0.12);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 99px;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(8px);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+.hero-btn-secondary:hover {
+    transform: translateY(-3px);
+    background: rgba(255,255,255,0.2);
+    color: white;
+}
+
+/* ============================================
+   NAVBAR — Glassmorphism Upgrade
+   ============================================ */
+
+#storefront-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1050;
+    transition: background 0.35s ease, box-shadow 0.35s ease, backdrop-filter 0.35s ease;
+    background: transparent;
+}
+
+#storefront-navbar.nav-transparent {
+    background: transparent;
+    box-shadow: none;
+}
+
+#storefront-navbar.nav-scrolled {
+    background: rgba(30, 61, 47, 0.82);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Push page content down so it doesn't hide under fixed navbar */
+body.storefront-page {
+    padding-top: 72px;
+}
+
+body.home-page {
+    padding-top: 0;
+}
+
+/* Nav links hover underline effect */
+#storefront-navbar .nav-link {
+    position: relative;
+    transition: color 0.2s ease;
+    padding-bottom: 4px;
+}
+#storefront-navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #F5A623;
+    border-radius: 2px;
+    transition: width 0.25s ease;
+}
+#storefront-navbar .nav-link:hover::after {
+    width: 100%;
+}
+
+/* ============================================
+   HERO — Two Column Layout
+   ============================================ */
+
+.min-vh-90 {
+    min-height: 88vh;
+}
+
+.hero-content.text-start .hero-badge {
+    text-align: left;
+}
+
+.hero-img-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 520px;
+}
+
+.hero-img-glow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 320px;
+    background: radial-gradient(circle, rgba(167, 196, 160, 0.25) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.hero-plant-img {
+    position: relative;
+    z-index: 2;
+    max-height: 500px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.25));
+    animation: floatLeaf 5s ease-in-out infinite;
+}

@@ -1,0 +1,57 @@
+/* Taman Indah — Sage & Warm theme (loaded after Bootstrap 5.3 CDN) */
+
+:root {
+    /* Palette */
+    --ti-sage: #4a7c59;
+    --ti-sage-rgb: 74, 124, 89;
+    --ti-sage-soft: #a7c4a0;
+    --ti-sage-soft-rgb: 167, 196, 160;
+    --ti-sage-dark: #2d5033;
+    --ti-sage-dark-rgb: 45, 80, 51;
+    --ti-warm: #f5a623;
+    --ti-warm-rgb: 245, 166, 35;
+    --ti-bg: #fafaf5;
+    --ti-bg-rgb: 250, 250, 245;
+
+    /* Bootstrap 5.3 tokens */
+    --bs-body-bg: var(--ti-bg);
+    --bs-body-color: var(--ti-sage-dark);
+    --bs-font-sans-serif: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --bs-body-font-family: var(--bs-font-sans-serif);
+
+    --bs-primary: var(--ti-sage);
+    --bs-primary-rgb: var(--ti-sage-rgb);
+
+    --bs-success: var(--ti-sage);
+    --bs-success-rgb: var(--ti-sage-rgb);
+    --bs-success-bg-subtle: #e8f0e5;
+    --bs-success-border-subtle: #c5d9bf;
+    --bs-success-text-emphasis: #24402a;
+
+    --bs-warning: var(--ti-warm);
+    --bs-warning-rgb: var(--ti-warm-rgb);
+    --bs-warning-bg-subtle: #fff6e8;
+    --bs-warning-border-subtle: #fcd9a4;
+    --bs-warning-text-emphasis: #8a5a0a;
+
+    --bs-light: #f5f6f0;
+    --bs-light-rgb: 245, 246, 240;
+
+    --bs-link-color: var(--ti-sage);
+    --bs-link-hover-color: #3d6b4a;
+}
+
+body,
+* {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.btn-success:hover,
+.btn-success:focus-visible {
+    box-shadow: 0 0 0 0.2rem rgba(var(--ti-warm-rgb), 0.35);
+}
+
+.btn-outline-success:hover,
+.btn-outline-success:focus-visible {
+    box-shadow: 0 0 0 0.15rem rgba(var(--ti-warm-rgb), 0.25);
+}
